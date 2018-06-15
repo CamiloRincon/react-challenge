@@ -1,0 +1,14 @@
+@mixin light-sans() {
+    font-family: $open-sans;
+    font-weight: 300;
+}
+
+@mixin regular-sans() {
+    font-family: $open-sans;
+    font-weight: 400;
+}
+
+@mixin bold-sans() {
+    font-family: $open-sans;
+    font-weight: 700;
+}
