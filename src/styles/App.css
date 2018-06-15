@@ -47,3 +47,7 @@ p {
     background-color: #4169E1;
     border-bottom: #4ECC78 10px solid;
     margin: 10px 0; }
+
+.field {
+  background: url("../images/field.jpg") no-repeat;
+  height: 1024px; }

@@ -1,12 +1,12 @@
-const PLAYERS = {
-
-Goalkeepers: {
+const PLAYERS =
+    [
+"Goalkeepers" : {
 'David Ospina',
 'Camilo Vargas',
 'Jose Fernando Cuadrado'
 },
 
-Defenders {
+"Defenders" {
 'Cristian Zapata'
 'Oscar Murillo'
 'Yerry Mina'
@@ -15,7 +15,7 @@ Defenders {
 'Davinson Sanchez'
 },
 
-Midfielders:
+"Midfielders":
    { 'Wilmar Barrios'
    'Carlos Sanchez'
     'Abel Aguilar'
@@ -26,13 +26,14 @@ Midfielders:
     'Juan Fernando Quintero'
    },
 
-Forwards:
+"Forwards":
 {
-'Carlos Bacca'
-'Radamel Falcao Garcia'
-'Luis Muriel'
-'Miguel Borja'
-'Jose Izquierdo'
+    'Carlos Bacca'
+    'Radamel Falcao Garcia'
+    'Luis Muriel'
+    'Miguel Borja'
+    'Jose Izquierdo'
 }
 
-}
+]
+
