@@ -1,34 +1,22 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
+
 class Modal extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleMouseClick = this.handleMouseClick.bind(this);
-        this.state = {
-            isHovering: false
-        };
-    }
-
-    handleMouseClick() {
-        this.setState(this.toggleState);
-    }
-
-    toggleState(state) {
-        return {
-            isHovering: !state.isHovering
-        };
-    }
 
     render() {
+        const { isOpen, onModalToggle } = this.props;
         return (
             <div className="modal">
-               <button className="modal--button" onClick={this.handleMouseClick}/>
-                {
-                this.state.isHovering &&
-                <div className="modal--wrapper">
+               {
+                isOpen &&
+                <div className="modal--wrapper" onClick={onModalToggle}>
                     <div className="modal--wrapper-content">
-                        <span onClick={this.handleMouseClick} className="modal--wrapper-close">&times;</span>
-                        <p>{this.props.text}</p>
+                        <h2>Goalkeepers</h2>
+                        <ul className="modal__list">
+                          <li>David Ospina</li>
+                          <li>Camilo Vargas</li>
+                          <li>Jose Fernando Cuadrado</li>
+                        </ul>
                     </div>
                 </div>
                 }
@@ -38,7 +26,7 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
-    text: PropTypes.string
+    position: PropTypes.string
 };
 
 export default Modal;
